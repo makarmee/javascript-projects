@@ -1,0 +1,131 @@
+@media screen and (min-width: 640px) {
+  * {
+    font-size: 16px;
+  }
+  body {
+    background-size: 100% !important;
+  }
+  .flow {
+    width: 520px;
+    margin: 175px auto;
+    padding: 48px 48px 18px;
+    border-radius: 16px;
+  }
+  .top {
+    grid-template-columns: auto 32px;
+  }
+  .plus-div {
+    width: 32px;
+    height: 32px;
+  }
+  .title {
+    font-size: 56px;
+    margin: 0;
+  }
+  h1 img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.75rem;
+  }
+  a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 640px) and (min-width: 375px) {
+  * {
+    font-size: 14px;
+  }
+  body {
+    background-size: 960px !important;
+  }
+  .flow {
+    width: 300px;
+    margin: 8.5rem auto;
+    padding: 1.75rem 1.75rem 0.25rem;
+    border-radius: 8px;
+  }
+  .top {
+    grid-template-columns: auto 28px;
+  }
+  .plus-div {
+    width: 28px;
+    height: 28px;
+  }
+  .title {
+    font-size: 36px;
+    margin: 0;
+  }
+  h1 img {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 1.75rem;
+  }
+  a {
+    font-size: 1.25rem;
+  }
+}
+@font-face {
+  font-family: workSans;
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+  font-weight: 400 600 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(assets/images/background-pattern-desktop.svg) no-repeat
+    hsl(275, 100%, 97%);
+  color: hsl(292, 42%, 14%);
+  background-position: top;
+  margin: 0 auto;
+  width: 100%;
+  font-family: workSans;
+  font-weight: 400;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.flow {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  display: grid;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.75rem 0;
+}
+.top:not(.top:last-child) {
+  border-bottom: 1px hsl(275, 100%, 97%) solid;
+}
+.top a {
+  font-weight: 600;
+}
+.top a:hover {
+  color: #ad28eb;
+  cursor: pointer;
+}
+.top .plus-div:hover {
+  cursor: pointer;
+}
+.top p {
+  color: hsl(292, 16%, 49%);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  line-height: 22px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  font-size: 14px;
+  color: hsl(228, 45%, 44%);
+}
+.hide {
+  display: none;
+}
