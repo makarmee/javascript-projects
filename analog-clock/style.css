@@ -16,8 +16,8 @@ body{
     top:calc(50% - 140px);
     left:calc(50% - 140px);
     box-shadow: inset 0 0 120px #ffffff55;
-    background-color: #ffffff11;
-    border:2px solid #fff;
+    backdrop-filter: brightness(320%) blur(12px);
+    background: linear-gradient(#ff000055, #0000ff55);
 }
 
 .line{
